@@ -1,6 +1,6 @@
 {
     "name": "@humanspeak/svelte-subscribe",
-    "version": "3.9.10",
+    "version": "4.0.0",
     "description": "Subscribe to non top-level stores in your Svelte templates",
     "keywords": [
         "svelte",
