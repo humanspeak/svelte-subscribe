@@ -1,75 +1,76 @@
 {
-    "name": "@humanspeak/svelte-subscribe",
-    "description": "Subscribe to non top-level stores in your Svelte templates",
-    "version": "3.0.0",
-    "scripts": {
-        "dev": "vite dev",
-        "build": "vite build && npm run package",
-        "preview": "vite preview",
-        "package": "svelte-kit sync && svelte-package && publint",
-        "prepublishOnly": "npm run package",
-        "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-        "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-        "test": "vitest run --coverage",
-        "test:only": "vitest run",
-        "test:watch": "vitest",
-        "lint": "prettier --check . && eslint .",
-        "format": "prettier --write ."
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+ssh://git@github.com/humanspeak/svelte-subscribe.git"
-    },
-    "keywords": [
-        "svelte",
-        "sveltejs",
-        "stores",
-        "subscribe",
-        "subscription"
-    ],
-    "author": "Humanspeak, Inc.",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/humanspeak/svelte-subscribe/issues"
-    },
-    "homepage": "https://github.com/humanspeak/svelte-subscribe#readme",
-    "exports": {
-        ".": {
-            "types": "./dist/index.d.ts",
-            "svelte": "./dist/index.js",
-            "default": "./dist/index.js"
-        }
-    },
-    "files": [
-        "dist",
-        "!dist/**/*.test.*",
-        "!dist/**/*.spec.*"
-    ],
-    "peerDependencies": {
-        "svelte": "^5.0.0"
-    },
-    "devDependencies": {
-        "@sveltejs/adapter-auto": "^3.0.0",
-        "@sveltejs/kit": "^2.0.0",
-        "@sveltejs/package": "^2.0.0",
-        "@sveltejs/vite-plugin-svelte": "^4.0.0",
-        "@typescript-eslint/eslint-plugin": "^6.0.0",
-        "@typescript-eslint/parser": "^6.0.0",
-        "@vitest/coverage-v8": "^2.1.3",
-        "eslint": "^8.28.0",
-        "eslint-config-prettier": "^9.1.0",
-        "eslint-plugin-svelte": "^2.30.0",
-        "prettier": "^3.1.1",
-        "prettier-plugin-svelte": "^3.1.2",
-        "publint": "^0.1.9",
-        "svelte": "^5",
-        "svelte-check": "^4.0.5",
-        "tslib": "^2.4.1",
-        "typescript": "^5.0.0",
-        "vite": "^5.0.3",
-        "vitest": "^2.1.3"
-    },
-    "svelte": "./dist/index.js",
-    "types": "./dist/index.d.ts",
-    "type": "module"
+	"name": "@humanspeak/svelte-subscribe",
+	"version": "3.9.9",
+	"description": "Subscribe to non top-level stores in your Svelte templates",
+	"keywords": [
+		"svelte",
+		"sveltejs",
+		"stores",
+		"subscribe",
+		"subscription"
+	],
+	"homepage": "https://github.com/humanspeak/svelte-subscribe#readme",
+	"bugs": {
+		"url": "https://github.com/humanspeak/svelte-subscribe/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/humanspeak/svelte-subscribe.git"
+	},
+	"license": "MIT",
+	"author": "Bryan Lee",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"svelte": "./dist/index.js",
+			"default": "./dist/index.js"
+		}
+	},
+	"svelte": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"dist",
+		"!dist/**/*.test.*",
+		"!dist/**/*.spec.*"
+	],
+	"scripts": {
+		"build": "vite build && npm run package",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"dev": "vite dev",
+		"format": "prettier --write .",
+		"lint": "prettier --check . && eslint .",
+		"lint:fix": "npm run format && eslint . --fix",
+		"package": "svelte-kit sync && svelte-package && publint",
+		"prepublishOnly": "npm run package",
+		"preview": "vite preview",
+		"test": "vitest run --coverage",
+		"test:only": "vitest run",
+		"test:watch": "vitest"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/package": "^2.0.0",
+		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"@typescript-eslint/eslint-plugin": "^6.0.0",
+		"@typescript-eslint/parser": "^6.0.0",
+		"@vitest/coverage-v8": "^1.1.0",
+		"eslint": "^8.28.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-svelte": "^2.30.0",
+		"prettier": "^3.1.1",
+		"prettier-plugin-svelte": "^3.1.2",
+		"publint": "^0.1.9",
+		"svelte": "^4.2.7",
+		"svelte-check": "^3.6.0",
+		"tslib": "^2.4.1",
+		"typescript": "^5.0.0",
+		"vite": "^5.0.3",
+		"vitest": "^1.0.0"
+	},
+	"peerDependencies": {
+		"svelte": "^4.0.0"
+	}
 }
