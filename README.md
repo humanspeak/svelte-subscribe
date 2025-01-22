@@ -13,18 +13,18 @@ Visit the [REPL](https://svelte.dev/repl/d1bb4f2249f54790934066edf63cb5cc?versio
 
 ```svelte
 <script>
-	import {writable} from 'svelte/store';
-	import {Subscribe} from 'svelte-subscribe';
+    import { writable } from 'svelte/store'
+    import { Subscribe } from 'svelte-subscribe'
 
-	const users = [{friend: writable('John')}];
+    const users = [{ friend: writable('John') }]
 </script>
 
 {#each users as { friend }}
-	{$friend}
-	<!-- ⛔ Stores must be declared at the top level of the component -->
-	<Subscribe {friend} let:friend>
-		{friend}
-	</Subscribe>
+    {$friend}
+    <!-- ⛔ Stores must be declared at the top level of the component -->
+    <Subscribe {friend} let:friend>
+        {friend}
+    </Subscribe>
 {/each}
 ```
 
@@ -40,9 +40,9 @@ $ npm i -D svelte-subscribe
 
 ```svelte
 <Subscribe a={writable(123)} let:a b={readable('abc')} let:b>
-	{a}
-	{b}
-	<!-- 123 abc -->
+    {a}
+    {b}
+    <!-- 123 abc -->
 </Subscribe>
 ```
 
