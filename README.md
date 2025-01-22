@@ -14,7 +14,7 @@ Visit the [REPL](https://svelte.dev/repl/d1bb4f2249f54790934066edf63cb5cc?versio
 ```svelte
 <script>
     import { writable } from 'svelte/store'
-    import { Subscribe } from 'svelte-subscribe'
+    import { Subscribe } from '@humanspeak/svelte-subscribe'
 
     const users = [{ friend: writable('John') }]
 </script>
