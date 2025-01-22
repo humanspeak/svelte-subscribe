@@ -26,4 +26,5 @@ export const derivedKeys = <S extends ReadOrWritableKeys<unknown>>(storeMap: S):
     ) as DerivedKeys<S>
 }
 
-export type DerivedKeys<S extends ReadOrWritableKeys<unknown>> = S extends ReadOrWritableKeys<infer T> ? Readable<T> : never
+export type DerivedKeys<S extends ReadOrWritableKeys<unknown>> =
+    S extends ReadOrWritableKeys<infer T> ? Readable<T> : never

@@ -1,11 +1,11 @@
 # svelte-subscribe
 
-[![npm version](http://img.shields.io/npm/v/svelte-subscribe.svg)](https://www.npmjs.com/package/svelte-subscribe)
-[![npm downloads](https://img.shields.io/npm/dm/svelte-subscribe.svg)](https://www.npmjs.com/package/svelte-subscribe)
+[![npm version](http://img.shields.io/npm/v/@humanspeak/svelte-subscribe.svg)](https://www.npmjs.com/package/svelte-subscribe)
+[![npm downloads](https://img.shields.io/npm/dm/@humanspeak/svelte-subscribe.svg)](https://www.npmjs.com/package/svelte-subscribe)
 ![license](https://img.shields.io/npm/l/svelte-subscribe)
-![build](https://img.shields.io/github/actions/workflow/status/bryanmylee/svelte-subscribe/publish.yml)
-[![coverage](https://coveralls.io/repos/github/bryanmylee/svelte-subscribe/badge.svg?branch=main)](https://coveralls.io/github/bryanmylee/svelte-subscribe?branch=main)
-[![size](https://img.shields.io/bundlephobia/min/svelte-subscribe)](https://bundlephobia.com/result?p=svelte-subscribe)
+![build](https://img.shields.io/github/actions/workflow/status/humanspeak/svelte-subscribe/publish.yml)
+[![coverage](https://coveralls.io/repos/github/humanspeak/svelte-subscribe/badge.svg?branch=main)](https://coveralls.io/github/humanspeak/svelte-subscribe?branch=main)
+[![size](https://img.shields.io/bundlephobia/min/@humanspeak/svelte-subscribe)](https://bundlephobia.com/result?p=@humanspeak/svelte-subscribe)
 
 Subscribe to non top-level stores in your Svelte templates.
 
@@ -14,7 +14,7 @@ Visit the [REPL](https://svelte.dev/repl/d1bb4f2249f54790934066edf63cb5cc?versio
 ```svelte
 <script>
     import { writable } from 'svelte/store'
-    import { Subscribe } from '@humanspeak/svelte-subscribe'
+    import { Subscribe } from 'svelte-subscribe'
 
     const users = [{ friend: writable('John') }]
 </script>
